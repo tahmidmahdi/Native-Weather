@@ -4,7 +4,7 @@ import { colors } from '../utils/index'
 
 const { PRIMARY_COLOR, SECONDARY_COLOR } = colors
 
-export default function WeatherInfo({ currentWeather }) {
+export default function weatherInformation({ currentWeather }) {
     const {
         main: { temp },
         weather: [details],
@@ -15,10 +15,10 @@ export default function WeatherInfo({ currentWeather }) {
     const iconUrl = `https://openweathermap.org/img/wn/${icon}@4x.png`
 
     return (
-        <View style={styles.weatherInfo}>
+        <View style={styles.weatherInformation}>
             <Text>{name}</Text>
             <Image style={styles.weatherIcon} source={{ uri: iconUrl }} />
-            <Text style={styles.textPrimary}>{temp}°</Text>
+            <Text style={styles.textPrimary}>{temp}° C</Text>
             <Text style={styles.weatherDescription}>{description}</Text>
             <Text style={styles.texSecondary}>{main}</Text>
         </View>
@@ -26,7 +26,7 @@ export default function WeatherInfo({ currentWeather }) {
 }
 
 const styles = StyleSheet.create({
-    weatherInfo: {
+    weatherInformation: {
         alignItems: 'center',
     },
     weatherDescription: {
@@ -37,13 +37,13 @@ const styles = StyleSheet.create({
         height: 100,
     },
     textPrimary: {
-        fontSize: 40,
+        fontSize: 42,
         color: PRIMARY_COLOR,
     },
     texSecondary: {
-        fontSize: 20,
+        fontSize: 22,
         color: SECONDARY_COLOR,
-        fontWeight: '500',
-        marginTop: 10,
+        fontWeight: '510',
+        marginTop: 11,
     },
 })
