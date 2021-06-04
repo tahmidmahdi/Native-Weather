@@ -40,7 +40,7 @@ export default function WeatherDetails({ currentWeather, unitsSystem }) {
                     <View style={styles.weatherDetailsRow}>
                         <MaterialCommunityIcons name="weather-windy" size={30} color={PRIMARY_COLOR} />
                         <View style={styles.weatherDetailsItems}>
-                            <Text>Wind Speed :</Text>
+                            <Text>Wind Speeds :</Text>
                             <Text style={styles.textSecondary}>{windSpeed}</Text>
                         </View>
                     </View>
