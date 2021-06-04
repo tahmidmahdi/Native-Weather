@@ -29,7 +29,7 @@ export default function WeatherDetails({ currentWeather, unitsSystem }) {
                     <View style={styles.weatherDetailsRow}>
                         <MaterialCommunityIcons name="water" size={30} color={PRIMARY_COLOR} />
                         <View style={styles.weatherDetailsItems}>
-                            <Text>Humidity :</Text>
+                            <Text>Humidity :-</Text>
                             <Text style={styles.textSecondary}>{humidity} %</Text>
                         </View>
                     </View>
